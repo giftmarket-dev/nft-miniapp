@@ -1,119 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>NFT Gifts Showcase</title>
 
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+
 <style>
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #1e1e2f, #12121c);
-  color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f14;
+    color: white;
 }
 
-.header {
-  text-align: center;
-  padding: 20px;
-  font-size: 22px;
-  font-weight: bold;
+header {
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-.sub {
-  text-align: center;
-  opacity: 0.7;
-  margin-bottom: 20px;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 15px;
-  padding: 15px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
 }
 
 .card {
-  background: #1f1f2e;
-  border-radius: 16px;
-  padding: 12px;
-  text-align: center;
-  transition: 0.3s;
+    background: #1c1c24;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.2s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  background: #29293d;
+    transform: scale(1.03);
 }
 
 .card img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.title {
-  margin: 10px 0;
-  font-weight: bold;
+    width: 80px;
+    margin-bottom: 10px;
 }
 
 .btn {
-  background: #2ea6ff;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 8px;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-  width: 100%;
+    background: #2a2aff;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 8px;
 }
 
 .btn:hover {
-  background: #1b8edb;
+    background: #4444ff;
 }
 </style>
 </head>
 
 <body>
 
-<div class="header">🎁 NFT Gifts</div>
-<div class="sub">Откройте подарок и приобретите его в Telegram</div>
+<header>🎁 NFT Gifts Marketplace</header>
 
-<div class="container">
+<div class="grid">
 
-  <div class="card">
-    <img src="https://via.placeholder.com/300x200" />
-    <div class="title">NFT Gift #001</div>
+<div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616490.png">
+    <h3>Durov Cap</h3>
     <button class="btn"
-      onclick="window.open('https://t.me/nft', '_blank')">
-      Купить
+    onclick="Telegram.WebApp.openTelegramLink('https://t.me/nft')">
+    Купить
     </button>
-  </div>
+</div>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/300x200" />
-    <div class="title">NFT Gift #002</div>
+<div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/2917/2917995.png">
+    <h3>Crypto Bear</h3>
     <button class="btn"
-      onclick="window.open('https://t.me/nft', '_blank')">
-      Купить
+    onclick="Telegram.WebApp.openTelegramLink('https://t.me/nft')">
+    Купить
     </button>
-  </div>
+</div>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/300x200" />
-    <div class="title">NFT Gift #003</div>
+<div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+    <h3>Diamond Gift</h3>
     <button class="btn"
-      onclick="window.open('https://t.me/nft', '_blank')">
-      Купить
+    onclick="Telegram.WebApp.openTelegramLink('https://t.me/nft')">
+    Купить
     </button>
-  </div>
+</div>
+
+<div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png">
+    <h3>Golden Box</h3>
+    <button class="btn"
+    onclick="Telegram.WebApp.openTelegramLink('https://t.me/nft')">
+    Купить
+    </button>
+</div>
 
 </div>
 
 <script>
-  const tg = window.Telegram.WebApp;
-  tg.expand();
+const tg = window.Telegram.WebApp;
+tg.expand();
 </script>
 
 </body>
 </html>
+
 
