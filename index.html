@@ -109,19 +109,23 @@
       <div class="card">
         <img src="https://via.placeholder.com/300x200" />
         <div>Holiday Drink NFT</div>
-        <button class="btn" onclick="buy()">Купить</button>
+        <button class="btn"
+  onclick="window.open('https://t.me/nft', '_blank')">
+  Купить
+</button>
       </div>
     </div>
   </div>
 
   <script>
-    function buy() {
-  window.open("https://t.me/nft", "_blank");
-}
+const tg = window.Telegram.WebApp;
+  tg.expand();
+</script>
     const tg = window.Telegram.WebApp;
     tg.expand();
   </script>
 </body>
 </html>
+
 
 
