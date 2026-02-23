@@ -1,131 +1,119 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NFT Gifts</title>
-  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NFT Gifts Showcase</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #12121c);
+  color: white;
+}
 
-    .container {
-      padding: 16px;
-    }
+.header {
+  text-align: center;
+  padding: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
 
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+.sub {
+  text-align: center;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
 
-    .categories {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      margin-bottom: 24px;
-    }
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
 
-    .cat {
-      background: #1e293b;
-      padding: 18px;
-      border-radius: 16px;
-      text-align: center;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.2s;
-    }
+.card {
+  background: #1f1f2e;
+  border-radius: 16px;
+  padding: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
 
-    .cat:hover {
-      background: #334155;
-      transform: scale(1.03);
-    }
+.card:hover {
+  transform: translateY(-5px);
+  background: #29293d;
+}
 
-    .gifts {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
 
-    .card {
-      background: #1e293b;
-      border-radius: 16px;
-      padding: 12px;
-      text-align: center;
-    }
+.title {
+  margin: 10px 0;
+  font-weight: bold;
+}
 
-    .card img {
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 8px;
-    }
+.btn {
+  background: #2ea6ff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
 
-    .btn {
-      margin-top: 8px;
-      background: #22c55e;
-      border: none;
-      padding: 8px 12px;
-      border-radius: 10px;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .btn:hover {
-      background: #16a34a;
-    }
-  </style>
+.btn:hover {
+  background: #1b8edb;
+}
+</style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>🎁 NFT Gifts</h1>
 
-    <div class="categories">
-      <div class="cat">🎁 Все</div>
-      <div class="cat">💎 Редкие</div>
-      <div class="cat">🔥 Новые</div>
-      <div class="cat">🎉 Праздничные</div>
-    </div>
+<div class="header">🎁 NFT Gifts</div>
+<div class="sub">Откройте подарок и приобретите его в Telegram</div>
 
-    <div class="gifts">
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200" />
-        <div>Ice Cream NFT</div>
-        <div class="card">
-  <img src="https://via.placeholder.com/300x200" />
-  <div>Durov’s Cap #2633</div>
-  <button class="btn"
-    onclick="window.open('https://t.me/nft', '_blank')">
-    Купить
-  </button>
-</div>
-      </div>
+<div class="container">
 
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200" />
-        <div>Holiday Drink NFT</div>
-        <button class="btn"
-  onclick="window.open('https://t.me/nft', '_blank')">
-  Купить
-</button>
-      </div>
-    </div>
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" />
+    <div class="title">NFT Gift #001</div>
+    <button class="btn"
+      onclick="window.open('https://t.me/nft', '_blank')">
+      Купить
+    </button>
   </div>
 
-  <script>
-const tg = window.Telegram.WebApp;
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" />
+    <div class="title">NFT Gift #002</div>
+    <button class="btn"
+      onclick="window.open('https://t.me/nft', '_blank')">
+      Купить
+    </button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" />
+    <div class="title">NFT Gift #003</div>
+    <button class="btn"
+      onclick="window.open('https://t.me/nft', '_blank')">
+      Купить
+    </button>
+  </div>
+
+</div>
+
+<script>
+  const tg = window.Telegram.WebApp;
   tg.expand();
 </script>
-    const tg = window.Telegram.WebApp;
-    tg.expand();
-  </script>
+
 </body>
 </html>
-
-
 
