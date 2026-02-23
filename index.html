@@ -71,37 +71,25 @@ header {
 <div class="card">
     <img src="https://cdn-icons-png.flaticon.com/512/616/616490.png">
     <h3>Durov Cap</h3>
-    <button class="btn"
-    onclick="Telegram.WebApp.openTelegramLink('https://t.me/nft')">
-    Купить
-    </button>
+    <button class="btn" onclick="openMarket()">Купить</button>
 </div>
 
 <div class="card">
     <img src="https://cdn-icons-png.flaticon.com/512/2917/2917995.png">
     <h3>Crypto Bear</h3>
-    <button class="btn"
-    onclick="Telegram.WebApp.openTelegramLink('https://t.me/nft')">
-    Купить
-    </button>
+    <button class="btn" onclick="openMarket()">Купить</button>
 </div>
 
 <div class="card">
     <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
     <h3>Diamond Gift</h3>
-    <button class="btn"
-    onclick="Telegram.WebApp.openTelegramLink('https://t.me/nft')">
-    Купить
-    </button>
+    <button class="btn" onclick="openMarket()">Купить</button>
 </div>
 
 <div class="card">
     <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png">
     <h3>Golden Box</h3>
-    <button class="btn"
-    onclick="Telegram.WebApp.openTelegramLink('https://t.me/nft')">
-    Купить
-    </button>
+    <button class="btn" onclick="openMarket()">Купить</button>
 </div>
 
 </div>
@@ -109,9 +97,14 @@ header {
 <script>
 const tg = window.Telegram.WebApp;
 tg.expand();
+
+function openMarket() {
+    Telegram.WebApp.openTelegramLink('tg://resolve?domain=nft');
+}
 </script>
 
 </body>
 </html>
+
 
 
